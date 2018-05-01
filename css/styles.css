@@ -1,0 +1,99 @@
+body {
+  display: block;
+}
+
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #2d3c49;
+}
+
+h2 {
+  padding: 0 40px;
+}
+
+hr {
+  color: #7d97ad;
+  background-color: #7d97ad;
+  margin: 30px auto;
+  width: 80%;
+  height: 8px;
+  border: 0 none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+header {
+  display: grid;
+  max-width: 4000px;
+  grid-template-columns: auto auto;
+  margin: 30px auto 0 auto;
+  width: 80%;
+
+}
+
+@media screen and (max-width: 479px) {
+  header {
+    display:inline-block;
+    text-align: center;
+  }
+}
+
+#logo {
+  width: 150px;
+  height: 150px;
+}
+
+#name {
+  place-self: end;
+  padding-bottom: 40px;
+}
+
+#description {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  place-self: end;
+  margin-top: -40px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 2em;
+}
+
+#footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-h3 {
+  margin-bottom: -5px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.titantron {
+  flex-shrink: 2;
+}
